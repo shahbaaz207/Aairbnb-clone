@@ -1,0 +1,354 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1900;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.header_icon{
+    object-fit: contain;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.header_center{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border:1px solid lightgray;
+    max-width: fit-content;
+    border-radius: 999px;
+    height: 20px;
+    padding: 10px;
+}
+
+.header_center>input{
+    border: none;
+    height: 30px;
+    width: 250px;
+    outline-width: 0;
+    font-size: 20px;
+}
+
+.header_center>.MuiSvgIcon-root{
+    font-size: 40px;
+    color: gray;
+}
+
+.header_right{
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.header_right>p{
+    margin-right:10px;
+}
+
+.header_right>.MuiSvgIcon-root{
+    margin-right: 10px;
+}
+
+
+/* banner Srceen */
+.banner{
+    height: 70vh;
+    position: relative;
+    width: 100%;
+    background-image: url('https://media.cntraveler.com/photos/5db1d0dd11c1e500092e7133/master/pass/airbnb-ski-aspen-28328347.jpg');
+    /* display: flex; */
+}
+
+.banner_info{
+    background-color: #000;
+    color: #fff;
+    padding: 25vh 50px 40px 50px;
+    width: 300px;
+}
+.banner_info>button{
+    background-color: #ff7777;
+    color: #fff;
+    text-transform: inherit;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.banner_info>h5{
+    margin-top: 10px;
+}
+
+.banner_info>button:hover{
+    background-color:#fff;
+    color: #ff7777;
+}
+
+.banner_searchButton{
+    background-color: rgb(243, 236, 236) !important;
+    font-weight: 900 !important;
+    text-transform:inherit!important;
+    color: #ff7777 !important;
+}
+
+.banner_search{
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+}
+
+/* banner end */
+
+/* search component */
+.search{
+    position: absolute;
+    top: 35px;
+    left: 25%;
+    z-index: 100;
+}
+
+.search>h2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 559px;
+    padding: 10px;
+    top: 360px;
+}
+
+.search>input{
+    width: 539px;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    height: 30px;
+    top: 400px;
+    border: none;
+}
+
+.search>input:focus{
+    outline-width: 0;
+}
+
+.search>button{
+    position: absolute;
+    left: 0;
+    top: 460px;
+    text-decoration: inherit !important;
+    background-color: #ff7777;
+    color: #fff;
+    width: 579px;
+}
+
+.search>button:hover{
+    background:rgb(33, 177, 64);
+    color: #000;
+}
+
+/* search component end */
+
+/* Home components */
+.home_section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card{
+    margin: 19px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px -9px rgba(0,0,0,0.75);
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+}
+
+.card:hover{
+    transform: scale(1.07);
+}
+.card>img{
+    max-width: 400px;
+    max-height: 200px;
+    width: 100%;
+    object-fit: fill;
+}
+
+.card_info{
+    margin-top: -9px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1;
+    border-top: 20px;
+}
+
+.card_info>h2{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.card_info>h4{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+/* end card section */
+
+/* footer section */
+.footer{
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    background-color: #fff;
+    bottom: 0;
+    text-align: center;
+}
+
+.footer>p{
+    padding: 5px;
+    font-size: 14px;
+}
+
+.searchPage_info{
+    padding: 20px;
+}
+
+.searchPage_info>p{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.searchPage_info>h1{
+    margin-bottom: 30px;
+}
+
+.searchPage_info>button{
+    border-radius: 30px;
+    margin: 5px;
+    text-transform: inherit;
+}
+
+/* SearchResult */
+  .searchResult{
+      display: flex;
+      position: relative;
+      margin: 20px;
+        padding: 20px;
+        border-bottom: 1px solid lightgray;
+        opacity: 1;
+        cursor: pointer;
+        flex-wrap: wrap;
+    }
+
+    .searchResult:hover{
+        opacity: .8;
+    }
+
+    .searchResult>img{
+        height: 300px;
+        width: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .searchResult_info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 20px;
+    }
+
+    .searchResult_heart{
+        top: 20px;
+        position: absolute;
+        right: 40px;
+        color: #ff0000;
+    }
+
+    .searchResult_infoTop{
+        width: 40vw;
+    }
+
+    .searchResult_infoTop>h3{
+        font-weight: 300;
+        margin-top: 10px;
+        text-transform: inherit;
+    }
+
+    .searchResult_infoTop>p{
+        margin-top: 10px;
+        font-size: 13px;
+        color: gray;
+    }
+
+    .searchResult_infoBottom{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .searchResult_star{
+        color: red;
+    }
+
+    .searchResult_stars{
+        display: flex;
+        align-items: center;
+    }
+/* searchResultEnd */
+
+/* media query  */
+@media(max-width:760px){
+    .header_icon{
+        margin-left: 0;
+    }
+    
+    .header_right{
+        display: none;
+    }
+
+    .header_center{
+        margin-right: 10px;
+        height: 20px;
+        padding: 5px;
+    }
+    
+    .header_center>input{
+        height: 20px;
+        width: 170px;
+        font-size: 20px;
+    }
+
+    .header_center>.MuiSvgIcon-root{
+        font-size: 25px;
+        color: gray;
+    }
+    
+    
+    .searchResult_heart{
+        position: absolute;
+        color: #ff0000;
+        top: 330px;
+    }
+    .searchResult_infoTop{
+        width: 60vw;
+    }
+
+
+    .searchResult_infoTop>p{
+        margin-top: 10px;
+        font-size: 13px;
+        color: gray;
+    }
+
+}
